@@ -233,6 +233,17 @@
         color: #2c3e50;
         margin-bottom: 40px;
       }
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none; /* Prevent text selection globally */
+}
+
+/* Allow text selection for specific elements like notes section */
+.notes-section, .event-description {
+  user-select: none; /* Allow selection for readable areas like descriptions */
+}
     </style>
   </head>
   <body>
@@ -257,6 +268,10 @@
       <div class="timeline-event">
         <div class="event-time">9:00 AM - Groom’s prep followed by the vibrant Haldi ceremony 🌸</div>
         <div class="event-description">Get ready for the vibrant and fun-filled Haldi ceremony!</div>
+      </div>
+      <div class="timeline-event">
+        <div class="event-time">12:00 PM - Nihanth's Pancha Kattu function 🙏</div>
+        <div class="event-description">Join us for Nihanth's special Pancha Kattu function, a meaningful ritual during the Haldi day.</div>
       </div>
       <div class="timeline-event">
         <div class="event-time">1:30 PM - Delightful lunch 🍽️</div>
@@ -325,11 +340,11 @@
         <div class="event-description">The groom welcomes the guests for a grand reception.</div>
       </div>
       <div class="timeline-event">
-        <div class="event-time">2:00 PM - Delicious lunch 🍽️</div>
+        <div class="event-time">1:30 PM - Delicious lunch 🍽️</div>
         <div class="event-description">Enjoy a lavish lunch before the grand celebrations begin.</div>
       </div>
       <div class="timeline-event">
-        <div class="event-time">3:00 PM - Jaw-dropping performance by Sahithya 🎶</div>
+        <div class="event-time">2:15 PM - Jaw-dropping performance by Sahithya 🎶</div>
         <div class="event-description">Sahithya’s amazing performance will leave everyone awestruck.</div>
       </div>
       <div class="timeline-event">
@@ -356,7 +371,7 @@
         <div class="event-description">The Nandi ceremony sets the stage for the wedding rituals.</div>
       </div>
       <div class="timeline-event">
-        <div class="event-time">10:00 AM - Gowri Pooja for the bride and Vadugu + Kashi Yatra for the groom 🙏💍</div>
+        <div class="event-time">10:00 AM - Gowri Pooja for the bride & Vadugu + Kashi Yatra for the groom 🙏💍</div>
         <div class="event-description">Special poojas for the bride and groom.</div>
       </div>
       <div class="timeline-event">
